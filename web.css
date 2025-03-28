@@ -1,0 +1,68 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #FFF5E6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #FFB6C1;
+    padding: 20px;
+    text-align: center;
+}
+h1 {
+    color: #FF69B4;
+    font-size: 2.5em;
+}
+nav {
+    background-color: #98FB98;
+    padding: 10px;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+nav ul li {
+    margin: 0 10px;
+}
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+.gallery img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin: 10px;
+    border: 5px solid #FFB6C1;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+.gallery img:hover {
+    transform: scale(1.1);
+}
+footer {
+    background-color: #FFB6C1;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+@media (max-width: 600px) {
+    .gallery img {
+        width: 150px;
+        height: 150px;
+    }
+}
+
